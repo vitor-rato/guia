@@ -29,4 +29,5 @@ hr{
  .cartãoComando:hover {
     background-color: #a8fcaf;
     scale:105%;
+    transform:translateY(-5%) ;
  }
