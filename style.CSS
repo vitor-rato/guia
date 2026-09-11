@@ -4,17 +4,17 @@
 }
 
 body {
-font-family: monospace;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
    height: 8vh;
    background-color: rgb(3, 83, 50);
-   color: white;
+   color: rgb(253, 255, 146);
 }
 main {
-   background-color: rgb(238, 200, 150);
-   color: white;
+   background-color: rgb(255, 237, 213);
+   color: rgb(87, 59, 9);
    height: 85vh;
    display: flex;
    flex-direction: column;
@@ -38,7 +38,7 @@ hr{
 
  .cartãoComando {
     width: calc(25% - 20px);
-    border:1px solid rgb(1, 61, 1);
+    border:1px solid rgb(0, 131, 0);
     border-radius: 15px;
     padding: 10px 5px;
     transition:150ms;
@@ -50,5 +50,5 @@ hr{
     transform:translateY(-5%) ;
  }
  footer {
-   background-color: burlywood;
+   background-color: rgb(155, 137, 114);
  }
