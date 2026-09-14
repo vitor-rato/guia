@@ -1,6 +1,28 @@
 * {
    margin: 0px;
    padding:0px;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #202020;
+   color: #eaeaff;
+   font-family: monospace;
+   font-size: large;
+   padding: 10px;
+}
+
+header {
+   background-color: rgb(1, 70, 37);
+   border-radius: 20px;
+   padding: 20px;
+}
+
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-block: 15px;
 }
 
 .grupoComandos {
@@ -10,10 +32,14 @@
 }
 
 .cartãoComando {
-   border:1px solid rgb(255, 30, 0);
+   border:1px solid rgb(6, 80, 25);
+   background-color: rgb(80, 158, 110);
    border-radius: 20px;
+   padding: 15px 25px;
+   gap:10px;
+   display: flex;
    width: 85vw;
-   height: 20vh;
+   min-height: 20vh;
 }
 
 @media screen and (min-width:768px) {
@@ -24,8 +50,58 @@
 }
 
 .cartãoComando {
-   border:1px solid rgb(255, 30, 0);
-   border-radius: 20px;
-   width: calc(25% - 15px);
+   border:1px solid rgb(0, 61, 5);
+   border-radius: 10px;
+   width: calc(90% - 15px);
    min-height: fit-content;
+}
+
+.cartãoComando:hover {
+   background-color: rgb(67, 134, 76);
+  
+}
+
+@media only screen and (max-width:600px) {
+   body {
+      font-size: x-large;
+   }
+}
+
+@media only screen and (min-width:601px) {
+   body {
+      background-color: rgb(114, 122, 75);
+   }
+
+   .grupoComandos {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .cartãoComando{
+      width:240px;
+   }
+}
+
+@media only screen and (min-width:768px){
+   .grupoComandos {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .cartãoComando {
+      width: calc(50vw - 30px);
+   }
+
+   .icone {
+      height: 40px;
+      width: 40px;
+   }
+}
+
+@media only screen and (min-width: width 992px ){
+
+}
+
+@media only screen and (min-width:1200px) {
+   
 }
