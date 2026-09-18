@@ -56,10 +56,7 @@ main{
    min-height: fit-content;
 }
 
-.cartãoComando:hover {
-   background-color: rgb(67, 134, 76);
-  
-}
+
 
 @media only screen and (max-width:600px) {
    body {
@@ -103,5 +100,27 @@ main{
 }
 
 @media only screen and (min-width:1200px) {
-   
+   main{
+      background-color: #325e25;
+      min-height: 80vh;
+      margin-block: auto;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .cartãoComando{
+      width: calc(25vw - 20px);
+      
+   }
+
+.cartãoComando:hover {
+   padding: 20px 20px;
+   font-size: 16px;
+   background-color: rgb(67, 134, 76);
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: transform 0.15s ease;
+   transform: scale(1.1);
+}
 }
